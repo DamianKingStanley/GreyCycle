@@ -1,0 +1,89 @@
+.InvestmentPlansSection {
+  padding: 4rem 2rem;
+  /* background: linear-gradient(135deg, #0a1f44, #061333); */
+  background: white;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.InvestmentPlansSection .Container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.InvestmentPlansSection .SectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0a1f44;
+}
+
+.PlansGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.PlanCard {
+  background: #112a53;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.PlanCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.PlanName {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.PlanRange {
+  font-size: 1rem;
+  color: #c1d1f0;
+  margin-bottom: 1rem;
+}
+
+.PlanFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.PlanFeatures li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+
+  text-align: left;
+}
+
+.FeatureIcon {
+  color: #00ff7f;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .PlansGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .InvestmentPlansSection .SectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .PlansGrid {
+    grid-template-columns: 1fr;
+  }
+}

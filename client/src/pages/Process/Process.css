@@ -1,0 +1,63 @@
+.ProcessSection {
+  padding: 4rem 2rem;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.ProcessSection .Container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ProcessSection .SectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.ProcessGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.ProcessStep {
+  background: #1b2f45;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProcessStep:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.StepIcon {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.ProcessStep h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.ProcessStep p {
+  font-size: 1rem;
+  color: #c1d1f0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .ProcessGrid {
+    flex-direction: column;
+  }
+  .ProcessSection .SectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}

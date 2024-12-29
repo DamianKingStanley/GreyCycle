@@ -1,0 +1,123 @@
+.LogInbody {
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+  color: #100247;
+}
+
+.Login {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.Login h1 {
+  font-size: 25px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.Login p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#Loginform input[type="email"],
+#Loginform input[type="password"],
+#Loginform select {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #100247;
+}
+#Loginform input[type="text"]:focus,
+#Loginform input[type="email"]:focus,
+#Loginform input[type="password"]:focus,
+#Loginform select:focus {
+  border-color: #100247;
+  box-shadow: 0px 0px 5px #100247;
+}
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 100%;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#submitbtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #100247;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitbtn:hover {
+  background-color: #1d3557;
+}
+
+#submitbtn:disabled {
+  background-color: #a8dadc;
+  cursor: not-allowed;
+}
+
+.LogInbody .success-message,
+.LogInbody .error-message {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.LogInbody .success-message {
+  background-color: #4caf50;
+}
+
+.LogInbody .error-message {
+  background-color: red;
+}
+
+.Login a {
+  color: #100247;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Login a:hover {
+  color: #457b9d;
+}
+
+.Login p {
+  margin: 0.5rem 0;
+}
+#role {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .LogInbody {
+    padding: 10px;
+  }
+}

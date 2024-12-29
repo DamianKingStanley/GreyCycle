@@ -1,0 +1,41 @@
+.GuidelinesSection {
+  padding: 2rem;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+.GuidelinesSection .Container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.GuidelinesSection .SectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #112244;
+}
+
+.GuidelinesList {
+  /* list-style: none; */
+  padding: 0;
+}
+
+.GuidelineItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: #112244;
+}
+
+.GuidelineIcon {
+  font-size: 15px;
+  color: #ffc107;
+  margin-right: 0.8rem;
+}
+@media (max-width: 992px) {
+  .GuidelinesSection .SectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}

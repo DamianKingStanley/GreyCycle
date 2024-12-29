@@ -1,0 +1,70 @@
+.InvestingSection {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.InvestingSection .Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.TextSection {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.TextSection h2,
+.TextSection h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.TextSection p {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.TextSection a {
+  color: #007bff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ImageSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageSection img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .InvestingSection .Container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ImageSection img {
+    max-width: 100%;
+  }
+  .TextSection {
+    flex: 1 1 50%;
+    padding: 10px;
+  }
+}

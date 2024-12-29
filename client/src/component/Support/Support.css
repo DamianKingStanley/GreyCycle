@@ -1,0 +1,40 @@
+.SupportSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #002f4f, #021429);
+  color: #ffffff;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.SupportGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.SupportCard {
+  background: #193c5f;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.SupportIcon {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .SupportGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .SupportGrid {
+    grid-template-columns: 1fr;
+  }
+}

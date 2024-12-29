@@ -1,0 +1,67 @@
+.RewardsSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #001f3f, #003567);
+  background: white;
+  color: #ffffff;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.RewardsSection .Container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.RewardsSection .SectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #001f3f;
+}
+
+.RewardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.RewardCard {
+  background: #193c5f;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.RewardCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.RewardIcon {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.RewardCard h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.RewardCard p {
+  font-size: 1rem;
+  color: #c1d1f0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .RewardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .RewardsGrid {
+    grid-template-columns: 1fr;
+  }
+}

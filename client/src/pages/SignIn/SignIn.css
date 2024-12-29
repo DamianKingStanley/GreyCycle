@@ -1,0 +1,143 @@
+.SignInbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  padding: 50px 100px;
+}
+
+.register {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  width: 100%;
+  text-align: center;
+  max-width: 500px;
+}
+
+.register h1 {
+  font-size: 2em;
+  color: #100247;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+#registerform input[type="text"],
+#registerform input[type="email"],
+#registerform input[type="password"],
+#registerform select {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1em;
+  color: #100247;
+  border: none;
+  border-bottom: 1px solid #100247;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+#registerform input[type="text"]:focus,
+#registerform input[type="email"]:focus,
+#registerform input[type="password"]:focus,
+#registerform select:focus {
+  border-color: #100247;
+  box-shadow: 0px 0px 5px #100247;
+}
+
+.register .error-message {
+  color: #e63946;
+}
+
+/* Button styling */
+.register #submitbtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #100247;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.register #submitbtn.loading::after {
+  content: "Please wait...";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.register #submitbtn:hover:not(:disabled) {
+  background-color: #1a0278;
+}
+
+.register #submitbtn:disabled {
+  background-color: #2907b0;
+  cursor: not-allowed;
+}
+
+#registerform p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+#registerform p a {
+  color: #100247;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#registerform p a:hover {
+  color: #2a9d8f;
+  text-decoration: underline;
+}
+/* #userRole {
+  display: none;
+} */
+
+#registerform .agreement {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#registerform .agreement input {
+  margin-right: 10px;
+}
+
+#registerform .agreement label {
+  color: #555;
+}
+
+#registerform .agreement label a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#registerform .agreement label a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 980px) {
+  .SignInbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    padding: 50px 10px;
+  }
+}

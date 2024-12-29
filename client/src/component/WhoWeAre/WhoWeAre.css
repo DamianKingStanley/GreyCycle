@@ -1,0 +1,74 @@
+.WhoWeAreSection {
+  padding: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+.WhoWeAreSection .Container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.WhoWeAreSection .SectionTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Description {
+  font-size: 20px;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.FeaturesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.FeatureCard {
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px dotted #193c5f;
+  color: #193c5f;
+}
+
+.FeatureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.FeatureIcon {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.FeatureCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.FeatureCard p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .FeaturesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .WhoWeAreSection .SectionTitle {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .FeaturesGrid {
+    grid-template-columns: 1fr;
+  }
+}

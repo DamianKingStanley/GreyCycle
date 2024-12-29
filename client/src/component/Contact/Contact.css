@@ -1,0 +1,66 @@
+.ContactSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #00274d, #041c3a);
+  color: #ffffff;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.ContactSection .Container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ContactSection .SectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+.ContactDescription {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #c1d1f0;
+}
+
+.ContactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ContactCard {
+  background: #14324e;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ContactCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.ContactIcon {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.ContactCard h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.ContactCard p {
+  font-size: 1rem;
+  color: #c1d1f0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .ContactGrid {
+    grid-template-columns: 1fr;
+  }
+}
